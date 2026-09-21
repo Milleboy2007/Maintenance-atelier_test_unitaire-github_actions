@@ -22,4 +22,4 @@ jobs:
             - name: Compile projet
               run: ./mvnw compile
             - name: Exec Test multiplier
-              run: ./mvnw test -Dtest=CalculatriceTest
+              run: ./mvnw test

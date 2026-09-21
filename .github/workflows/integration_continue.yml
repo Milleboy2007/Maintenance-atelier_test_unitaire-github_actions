@@ -20,3 +20,5 @@ jobs:
               run: chmod +x mvnw
             - name: Compile projet
               run: ./mvnw compile
+            - name: Exec Test multiplier
+              run: ./mvnw test

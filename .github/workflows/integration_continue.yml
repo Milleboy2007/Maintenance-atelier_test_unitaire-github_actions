@@ -3,6 +3,7 @@ name: Compilation du projet Maintenance-atelier_test_unitaire-github_action
 # Le on specifi moment d'execution
 on:
     push:
+    workflow_dispatch: # Manual trigger on github
 
 jobs:
     compilation: # Nom du job

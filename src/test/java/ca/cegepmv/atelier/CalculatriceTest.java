@@ -94,12 +94,15 @@ class CalculatriceTest {
     @Test
     void estPairDistingueLesNombresPairsEtImpairs() {
         // TODO: utilisez assertAll(...) pour vérifier PLUSIEURS assertions dans un seul test :
-        //  - estPair(4) doit être vrai
-        assertTrue(calculatrice.estPair(4));
-        //  - estPair(7) doit être faux
-        assertFalse(calculatrice.estPair(7));
-        //  - estPair(0) doit être vrai
-        assertTrue(calculatrice.estPair(0));
+        assertAll(
+            //  - estPair(4) doit être vrai
+            () -> assertTrue(calculatrice.estPair(4)),
+            //  - estPair(7) doit être faux
+            () -> assertFalse(calculatrice.estPair(7)),
+            //  - estPair(0) doit être vrai
+            () -> assertTrue(calculatrice.estPair(0))
+        );
+
     }
 
     @Test

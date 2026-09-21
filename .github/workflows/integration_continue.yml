@@ -16,5 +16,7 @@ jobs:
               with:                          # ...paramétrée par des entrées (`with:`)
                 java-version: '25'
                 distribution: 'temurin'
+            - name: Add perm
+              run: chmod +x mvnw
             - name: Compile projet
               run: ./mvnw compile
